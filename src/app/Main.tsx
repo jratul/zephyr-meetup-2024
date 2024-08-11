@@ -11,6 +11,14 @@ interface Props {
   curSectionIdx: number;
 }
 
+const pages = [
+  <Intro key={0} />,
+  <Speaker key={1} />,
+  <Session key={2} />,
+  <Solution key={3} />,
+  <Contact key={4} />,
+];
+
 export default function Main({ curSectionIdx }: Props) {
   const divRef = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -22,14 +30,6 @@ export default function Main({ curSectionIdx }: Props) {
       });
     }
   }, [curSectionIdx]);
-
-  const pages = [
-    <Intro />,
-    <Speaker />,
-    <Session />,
-    <Solution />,
-    <Contact />,
-  ];
 
   return (
     <div>

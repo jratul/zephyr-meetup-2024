@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Main from "./Main";
+import { menus } from "./constants";
 
 export default function Home() {
   const [curSectionIdx, setCurSectionIdx] = useState<number>(0);
@@ -13,9 +14,10 @@ export default function Home() {
   };
 
   const handleScrollChange = () => {
-    setCurMenuIdx(
-      Math.floor((5 * window.scrollY) / document.body.scrollHeight)
+    let idx = Math.floor(
+      (5 * (window.scrollY + 100)) / document.body.scrollHeight
     );
+    setCurMenuIdx(idx);
   };
 
   useEffect(() => {

@@ -10,7 +10,6 @@ export default function Intro() {
       <div className="w-1/3 mt-24 ml-10">
         <img src="images/zephyr-time.png" alt="zephyr-time" />
       </div>
-      <div className="grid-rows-1"></div>
     </div>
   );
 }
