@@ -1,32 +1,32 @@
 const speakerData = [
   {
-    name: "Steven McHail",
-    job: "Designer at Globex Corporation",
-    image: "images/speakers/member1.avif",
-  },
-  {
-    name: "Jaquelin Isch",
-    job: "UX Design at InGen",
-    image: "images/speakers/member2.avif",
-  },
-  {
-    name: "Dianne Guilianelli",
-    job: "General Manager at Initech",
+    name: "Brandon Austin",
+    job: "Chief Technical Officer",
     image: "images/speakers/member3.avif",
   },
   {
-    name: "Ronni Cantadore",
-    job: "Design Engineer at Weyland-Yutani",
+    name: "Ashley Phillips",
+    job: "Senior DB Engineer",
+    image: "images/speakers/member1.avif",
+  },
+  {
+    name: "Giovani Lo Celso",
+    job: "UX Design of Zephyr Admin Page",
+    image: "images/speakers/member2.avif",
+  },
+  {
+    name: "Alfie Whiteman",
+    job: "Software Architect",
     image: "images/speakers/member4.avif",
   },
   {
-    name: "Erhart Cockrin",
-    job: "Product Lead at Cyberdyne Systems",
+    name: "Alejo Veliz",
+    job: "Product Manager",
     image: "images/speakers/member5.avif",
   },
   {
-    name: "Parker Johnson",
-    job: "UI Designer at MomCorp",
+    name: "Luka Vušković",
+    job: "Data Scientist",
     image: "images/speakers/member6.avif",
   },
 ];
@@ -45,8 +45,8 @@ export default function Speaker() {
       </div>
       <div className="mx-auto grid sm:grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-10">
         {speakerData.map((speaker) => (
-          <div className="col-span-1" key={speaker.name}>
-            <div className="w-1/2 rounded-full m-auto overflow-hidden">
+          <div className="col-span-1 mb-5" key={speaker.name}>
+            <div className="w-1/2 rounded-full mx-auto mb-5 overflow-hidden">
               <img
                 src={speaker.image}
                 alt={speaker.name}
