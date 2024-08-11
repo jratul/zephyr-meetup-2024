@@ -33,7 +33,7 @@ export default function Main({ curSectionIdx }: Props) {
 
   return (
     <div>
-      <div>
+      <div className="pl-20">
         {pages.map((page, idx) => (
           <div
             key={idx}
