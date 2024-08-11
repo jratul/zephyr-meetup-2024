@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Main from "./Main";
-import { menus } from "./constants";
 
 export default function Home() {
   const [curSectionIdx, setCurSectionIdx] = useState<number>(0);
