@@ -15,7 +15,8 @@ export default function Home() {
 
   const handleScrollChange = () => {
     let idx = Math.floor(
-      (5 * (window.scrollY + 100)) / document.body.scrollHeight
+      (5 * (window.scrollY + document.body.clientHeight / 10)) /
+        document.body.scrollHeight
     );
     setCurMenuIdx(idx);
   };
