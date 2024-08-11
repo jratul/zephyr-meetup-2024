@@ -29,8 +29,11 @@ export default function Home() {
       <div className="col-span-1">
         <Nav curMenuIdx={curMenuIdx} handleChangeMenu={handleChangeMenu} />
       </div>
-      <div className="col-span-4">
+      <div className="col-span-4 z-10">
         <Main curSectionIdx={curSectionIdx} />
+      </div>
+      <div className="fixed top-0 right-0 z-0">
+        <img src="images/zephyr-right-bg.png" className="h-svh" />
       </div>
     </div>
   );
