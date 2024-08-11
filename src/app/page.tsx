@@ -27,13 +27,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-transparent grid lg:grid-cols-5 md:grid-cols-12">
+    <div className="bg-transparent grid lg:grid-cols-6 md:grid-cols-12">
       <div className="lg:col-span-1 md:col-span-1">
         <Nav curMenuIdx={curMenuIdx} handleChangeMenu={handleChangeMenu} />
       </div>
       <div className="lg:col-span-4 md:col-span-11">
         <Main curSectionIdx={curSectionIdx} />
       </div>
+      <div className="lg:col-span-1 md:hidden"></div>
     </div>
   );
 }
