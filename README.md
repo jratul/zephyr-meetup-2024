@@ -3,6 +3,8 @@
 이 프로젝트는 가상의 Database Solution, Zephyr의<br/>
 Conference 홍보 페이지입니다.
 
+https://zephyr-meetup-2024.vercel.app/
+
 ## Powered by  
 <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
