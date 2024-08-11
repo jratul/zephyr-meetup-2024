@@ -50,22 +50,25 @@ export default function Solution() {
     <div className="py-10">
       <div className="mx-auto px-6">
         <div className="mx-auto text-center">
-          <p className="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+          <p className="mt-2 text-4xl font-bold tracking-tight text-orange-500 sm:text-5xl">
             Solution
           </p>
         </div>
         <p className="mt-3 text-lg leading-8 text-white text-center">
           데이터의 비즈니스화,{" "}
-          <span className="text-primary font-semibold">Zephyr</span>와 함께
+          <span className="text-orange-500 font-semibold">Zephyr</span>와 함께
           하세요.
         </p>
         <div className="mt-20 flow-root">
-          <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-yellow-300 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
+          <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-orange-300 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
             {tiers.map((tier) => (
-              <div key={tier.id} className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
+              <div
+                key={tier.id}
+                className="pt-16 lg:px-8 lg:pt-0 xl:px-14 font-sans"
+              >
                 <h3
                   id={tier.id}
-                  className="text-base font-semibold leading-7 text-primary"
+                  className="text-base font-semibold leading-7 text-orange-500"
                 >
                   {tier.name}
                 </h3>
@@ -82,7 +85,7 @@ export default function Solution() {
                 </p>
                 <a
                   aria-describedby={tier.id}
-                  className="cursor-pointer mt-10 block rounded-md bg-primary px-3 py-2 text-center text-sm font-semibold leading-6 text-background shadow-sm hover:bg-yellow-300"
+                  className="cursor-pointer mt-10 block rounded-md bg-orange-500 px-3 py-2 text-center text-sm font-semibold leading-6 text-background shadow-sm hover:bg-orange-300"
                 >
                   Buy plan
                 </a>
@@ -97,7 +100,7 @@ export default function Solution() {
                     <li key={feature} className="flex gap-x-3">
                       <CheckCircleIcon
                         aria-hidden="true"
-                        className="h-6 w-5 flex-none text-yellow-500"
+                        className="h-6 w-5 flex-none text-orange-500"
                       />
                       {feature}
                     </li>

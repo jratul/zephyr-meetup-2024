@@ -80,26 +80,26 @@ export default function Session() {
   return (
     <div className="p-10">
       <div className="mx-auto text-center">
-        <p className="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+        <p className="mt-2 text-4xl font-bold tracking-tight text-orange-500 sm:text-5xl">
           Session
         </p>
         <p className="mt-3 mb-5 text-lg text-white">
-          <span className="text-primary font-semibold">Zephyr</span>만의 풍성한
-          세션과 함께하세요.
+          <span className="text-orange-500 font-semibold">Zephyr</span>만의
+          풍성한 세션과 함께하세요.
         </p>
       </div>
       <div className="mx-auto grid sm:grid-cols-1 md:grid-cols-3 gap-x-5">
         {sessionData.map((placeInfo) => (
           <div className="col-span-1" key={placeInfo.place}>
-            <p className="text-center text-yellow-500 text-2xl font-semibold mb-3">
+            <p className="text-center text-orange-500 text-2xl font-semibold mb-3">
               {placeInfo.place}
             </p>
             {placeInfo.sessions.map((session) => (
               <div
-                className="mx-auto p-5 mb-5 border-yellow-200 border-2 rounded"
+                className="mx-auto p-5 mb-5 border-orange-500 border-2 rounded"
                 key={session.title}
               >
-                <p className="text-amber-300 text-xl font-semibold">
+                <p className="text-orange-400 text-xl font-semibold">
                   {session.title}
                 </p>
                 <p className="text-gray-300 text-sm">{session.time}</p>

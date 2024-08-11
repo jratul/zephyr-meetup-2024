@@ -35,18 +35,18 @@ export default function Speaker() {
   return (
     <div className="p-10">
       <div className="mx-auto text-center">
-        <p className="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+        <p className="mt-2 text-4xl font-bold tracking-tight text-orange-500 sm:text-5xl">
           Speaker
         </p>
         <p className="mt-3 mb-8 text-lg text-white">
-          <span className="text-primary font-semibold">Zephyrian</span>이
+          <span className="text-orange-500 font-semibold">Zephyrian</span>이
           여러분을 이끌 것입니다.
         </p>
       </div>
       <div className="mx-auto grid sm:grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-10">
         {speakerData.map((speaker) => (
           <div className="col-span-1" key={speaker.name}>
-            <div className="w-4/5 rounded-full m-auto overflow-hidden">
+            <div className="w-1/2 rounded-full m-auto overflow-hidden">
               <img
                 src={speaker.image}
                 alt={speaker.name}
@@ -54,7 +54,7 @@ export default function Speaker() {
               />
             </div>
             <div className="text-center">
-              <p className="text-yellow-500 font-semibold text-2xl">
+              <p className="text-orange-500 font-semibold text-2xl">
                 {speaker.name}
               </p>
               <p>{speaker.job}</p>
