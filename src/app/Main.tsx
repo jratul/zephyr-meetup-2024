@@ -33,17 +33,25 @@ export default function Main({ curSectionIdx }: Props) {
 
   return (
     <div>
-      {pages.map((page, idx) => (
-        <div
-          key={idx}
-          className="lg:h-svh sm:h-auto w-4/5 mx-auto"
-          ref={(element) => {
-            divRef.current[idx] = element;
-          }}
-        >
-          {page}
-        </div>
-      ))}
+      <div>
+        {pages.map((page, idx) => (
+          <div
+            key={idx}
+            className="min-h-svh w-4/5 mx-auto"
+            ref={(element) => {
+              divRef.current[idx] = element;
+            }}
+          >
+            {page}
+          </div>
+        ))}
+      </div>
+      <div className="fixed top-0 left-0 -z-10 opacity-30">
+        <img src="images/zephyr-left-bg.png" className="h-1/4" />
+      </div>
+      <div className="fixed top-0 right-0 -z-10 opacity-30">
+        <img src="images/zephyr-right-bg.png" className="h-full" />
+      </div>
     </div>
   );
 }

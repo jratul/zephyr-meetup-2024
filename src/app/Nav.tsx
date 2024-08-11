@@ -12,7 +12,7 @@ export default function Nav({ curMenuIdx, handleChangeMenu }: Props) {
   return (
     <div className="h-svh w-1/5 m-5 fixed">
       <nav>
-        <ol role="list" className="text-white lg:text-6xl sm:text-xl">
+        <ol role="list" className="text-white lg:text-6xl md:text-xl">
           {menus.map((menu, menuIdx) => (
             <li
               className={clsx(
