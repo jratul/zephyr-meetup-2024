@@ -5,7 +5,7 @@ const tiers = [
     name: "Basic",
     id: "tier-basic",
     href: "#",
-    price: { monthly: "\\150,000", annually: "\\120,000" },
+    price: { monthly: "150,000", annually: "120,000" },
     description: "기본 기능 제공",
     features: [
       "제품 5개",
@@ -18,7 +18,7 @@ const tiers = [
     name: "Professional",
     id: "tier-professional",
     href: "#",
-    price: { monthly: "\\300,000", annually: "\\ 240,000" },
+    price: { monthly: "300,000", annually: "240,000" },
     description: "비즈니스 성장을 위한 추가 Feature 제공",
     features: [
       "제품 25개",
@@ -32,7 +32,7 @@ const tiers = [
     name: "Ultimate",
     id: "tier-ultimate",
     href: "#",
-    price: { monthly: "\\600,000", annually: "\\480,000" },
+    price: { monthly: "600,000", annually: "480,000" },
     description: "Zephyr의 모든 것을 누릴 수 있는 Plan",
     features: [
       "제품 무제한",
@@ -74,14 +74,14 @@ export default function Solution() {
                 </h3>
                 <p className="mt-6 flex items-baseline gap-x-1">
                   <span className="text-5xl font-bold tracking-tight text-white">
-                    {tier.price.monthly}
+                    &#65510;{tier.price.monthly}
                   </span>
                   <span className="text-sm font-semibold leading-6 text-gray-300">
                     /월
                   </span>
                 </p>
                 <p className="mt-3 text-sm leading-6 text-gray-300">
-                  1년 결제 시, {tier.price.annually}
+                  1년 결제 시, &#65510;{tier.price.annually}
                 </p>
                 <a
                   aria-describedby={tier.id}
