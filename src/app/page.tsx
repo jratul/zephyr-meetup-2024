@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Nav from "./Nav";
+import Main from "./Main";
 
 export default function Home() {
   const [curSectionIdx, setCurSectionIdx] = useState<number>(0);
@@ -24,12 +25,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="grid grid-cols-5">
+    <div className="bg-transparent grid grid-cols-5">
       <div className="col-span-1">
         <Nav curMenuIdx={curMenuIdx} handleChangeMenu={handleChangeMenu} />
       </div>
       <div className="col-span-4">
-        <div></div>
+        <Main curSectionIdx={curSectionIdx} />
       </div>
     </div>
   );
