@@ -16,7 +16,7 @@ export default function Nav({ curMenuIdx, handleChangeMenu }: Props) {
           {menus.map((menu, menuIdx) => (
             <li
               className={clsx(
-                "hover:text-orange-300 cursor-pointer my-2 font-tenada",
+                "hover:text-orange-300 cursor-pointer my-2 font-aldrich",
                 menuIdx === curMenuIdx && "text-orange-500"
               )}
               onClick={() => handleChangeMenu(menuIdx)}

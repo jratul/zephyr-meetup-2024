@@ -2,24 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@font-face {
-  font-family: "PartialSans";
-  src: url("./fonts/PartialSansKR-Regular.otf");
-}
-
-@font-face {
-  font-family: "Tenada";
-  src: url("./fonts/Tenada.ttf");
-}
-
-.font-partial {
-  font-family: "PartialSans";
-}
-
-.font-tenada {
-  font-family: "Tenada";
-}
-
 img {
   -webkit-user-drag: none;
   -khtml-user-drag: none;

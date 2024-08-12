@@ -73,7 +73,7 @@ export default function Solution() {
                   {tier.name}
                 </h3>
                 <p className="mt-6 flex items-baseline gap-x-1">
-                  <span className="text-5xl font-bold tracking-tight text-white">
+                  <span className="text-xl sm:text-3xl font-bold tracking-tight text-white">
                     &#65510;{tier.price.monthly}
                   </span>
                   <span className="text-sm font-semibold leading-6 text-gray-300">

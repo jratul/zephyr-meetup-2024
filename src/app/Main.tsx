@@ -37,7 +37,7 @@ export default function Main({ curSectionIdx }: Props) {
         {pages.map((page, idx) => (
           <div
             key={idx}
-            className="min-h-svh w-4/5 mx-auto"
+            className="min-h-svh w-full mx-auto"
             ref={(element) => {
               divRef.current[idx] = element;
             }}

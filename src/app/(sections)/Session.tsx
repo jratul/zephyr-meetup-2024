@@ -106,7 +106,7 @@ export default function Session() {
       <div className="mx-auto grid sm:grid-cols-1 md:grid-cols-3 gap-x-5">
         {sessionData.map((placeInfo) => (
           <div className="col-span-1" key={placeInfo.place}>
-            <p className="text-center text-orange-500 text-2xl font-semibold mb-3">
+            <p className="text-center text-orange-500 text-base lg:text-2xl font-semibold mb-3">
               {placeInfo.place}
             </p>
             {placeInfo.sessions.map((session) => (
@@ -114,7 +114,7 @@ export default function Session() {
                 className="mx-auto p-5 mb-5 border-orange-500 border-2 rounded"
                 key={session.title}
               >
-                <p className="text-orange-400 text-xl font-semibold">
+                <p className="text-orange-400 text-sm lg:text-xl font-semibold">
                   {session.title}
                 </p>
                 <p className="text-gray-300 text-sm">{session.time}</p>
